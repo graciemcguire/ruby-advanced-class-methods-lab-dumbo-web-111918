@@ -42,6 +42,8 @@ class Song
   def self.alphabetical
     all.sort_by { |i| i.name }
   end
+  
+  
 end
 
 #   def self.new_from_filename(mp3_formatted_file)
