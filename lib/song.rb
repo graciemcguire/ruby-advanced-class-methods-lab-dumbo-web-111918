@@ -44,7 +44,10 @@ class Song
   end
   
   def self.new_from_filename(mp3)
-    song 
+    song = self.new
+    song.name = mp3.split[1]
+    song.artist_name = mp3.split[0]
+    song
 end
 
 #   def self.new_from_filename(mp3_formatted_file)
